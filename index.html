@@ -7,41 +7,51 @@
   <title>Mentor Profile</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css">
+  
 </head>
-    <nav class="bg-white shadow-md px-4 py-3">
-        <div class="container mx-auto flex justify-between items-center">
-            <!-- Logo Section -->
-            <a href="#" class="flex items-center text-purple-600 text-2xl font-bold">
-               <img src="./images/WhatsApp Image 2024-12-20 at 15.18.15_40f07bfd.jpg" alt="">
-            </a>
+<nav class="bg-white shadow-md">
+  <div class="container mx-auto flex items-center justify-between py-4 px-6">
+      <!-- Logo -->
+      <div class="text-purple-600 text-xl font-bold flex items-center ">
+         <img src="https://mocktrails.com/uploads/medium/4db20fb0859e3bb81bc835636373d972_medium-229x68.png" alt="" class="h-10">
+      </div>
 
-            <!-- Hamburger Menu -->
-            <button id="menu-btn" class="text-purple-600 md:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
-            </button>
+     
+      <ul class="hidden md:flex space-x-6 text-gray-800">
+          <li><a href="#" class="hover:text-purple-600">Home</a></li>
+          <li><a href="#" class="hover:text-purple-600">Interviews</a></li>
+          <li><a href="#" class="hover:text-purple-600">Blogs</a></li>
+      </ul>
 
-            <!-- Desktop Menu -->
-            <div id="menu" class="hidden md:flex items-center space-x-6">
-                <a href="#" class="text-gray-700 hover:text-purple-600">Home</a>
-                <a href="#" class="text-gray-700 hover:text-purple-600">Interviewers</a>
-                <a href="#" class="text-gray-700 hover:text-purple-600">Blogs</a>
-                <a href="#" class="px-4 py-2 bg-white border border-purple-600 text-purple-600 rounded hover:bg-purple-600 hover:text-white">Sign In</a>
-                <a href="#" class="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Get Started</a>
-            </div>
-        </div>
+    
+      <div class="hidden md:flex space-x-4">
+          <button class="text-gray-800 hover:text-purple-600">Sign In</button>
+          <button class="bg-purple-600 text-white py-1 px-4 rounded hover:bg-purple-700">Get Started</button>
+      </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden flex flex-col mt-4 space-y-4">
-            <a href="#" class="block text-gray-700 hover:text-purple-600">Home</a>
-            <a href="#" class="block text-gray-700 hover:text-purple-600">Interviewers</a>
-            <a href="#" class="block text-gray-700 hover:text-purple-600">Blogs</a>
-            <a href="#" class="block px-4 py-2 bg-white border border-purple-600 text-purple-600 rounded hover:bg-purple-600 hover:text-white">Sign In</a>
-            <a href="#" class="block px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Get Started</a>
-        </div>
-    </nav>
+     
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+          <svg class="w-6 h-6 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+      </button>
+  </div>
 
+ 
+  <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+      <ul class="space-y-4 p-4">
+          <li><a href="#" class="block text-gray-800 hover:text-purple-600">Home</a></li>
+          <li><a href="#" class="block text-gray-800 hover:text-purple-600">Interviews</a></li>
+          <li><a href="#" class="block text-gray-800 hover:text-purple-600">Blogs</a></li>
+          <li>
+              <button class="block w-full text-left text-gray-800 hover:text-purple-600">Sign In</button>
+          </li>
+          <li>
+              <button class="block w-full bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700">Get Started</button>
+          </li>
+      </ul>
+  </div>
+</nav>
       <!-- Profile Section -->
       <section class=" bg-white shadow-md">
         <div class="relative">
@@ -96,9 +106,9 @@
     
     
     
-      <!-- Profile Section -->
+      <!-- Profile Section --> 
      
-            <div class="mt-4 flex items-center gap-2">
+            <div class="mt-4 mx-16	 flex items-center gap-2 ">
               <a href="#" class="btn btn-sm btn-outline btn-primary">Overview</a>
               <a href="#" class="btn btn-sm btn-outline">Reviews</a>
             </div>
@@ -116,7 +126,7 @@
             <div class="mt-4">
               <div class="flex justify-between items-center">
                 <p class="text-gray-600">Skills</p>
-                <span class="badge badge-primary">Full Stack</span>
+                <span class="badge badge-outline border-orange-700 text-red-700 bg-red-300 ">Full Stack</span>
               </div>
               <div class="flex justify-between items-center mt-4">
                 <p class="text-gray-600">Fluent In</p>
@@ -185,10 +195,20 @@
             <div class="mt-4">
               <div class="flex justify-between items-center">
                 <p class="text-gray-600">Full Stack Developer Mock Interview</p>
-                <p class="font-semibold text-gray-800">4500৳</p>
+                
+                <p class="font-semibold text-gray-800">4500৳</p><br><br>
               </div>
-              <p class="text-sm text-gray-500">40 minutes</p>
-              <button class="btn btn-primary w-full mt-4">Book Now</button>
+                <div class="text-sm text-gray-500 mb-4">40 minutes</div>
+            
+             
+                  <button id="book-now" class="btn btn-primary w-full">BOOK NOW</button>
+                
+                <script>
+                  document.getElementById('book-now').addEventListener('click', () => {
+                    alert('Thank you for booking the session! We will contact you soon.');
+                  });
+                </script>
+              </section>
             </div>
           </div>
         </div>
